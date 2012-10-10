@@ -1,18 +1,3 @@
-<<<<<<< HEAD
-
-This is a new line.
-
-     
-
-
-
-
-
-
-
-
-
-=======
 CS147
 =====
 
@@ -45,4 +30,3 @@ Provides a rudimentary framework for accesing the Venues platform on the Foursqu
 * 7 - HTML5 Audio
 
 Demonstrates audio playback in mp3 and ogg formats. This is stripped down version of the Simple HTML5 Audio Player from Envato and is mobile-friendly.
->>>>>>> 422512b05eea036895205c12b93252338771e274
