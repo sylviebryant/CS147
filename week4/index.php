@@ -14,34 +14,21 @@
 	<body>
 	
 		<div class="banner"></div>
+		<?php
+		include("menu.php");
+		?>
 		
 		<table>
 		<?php
-<<<<<<< HEAD
-
-		include("config.php");
-		$query = "select * from books";
-		// DonÕt be intimidated by the following lines. You can pretty much
-		// always copy and paste these because theyÕre sort of like
-		// functional bits that never change.
-		
-		$result = mysql_query($query);
-		while ($row = mysql_fetch_assoc($result)) {
-			echo "<p>" $row["title"]. "</p>";
-			echo "<p>" $row["author"]. "</p>";
-=======
-		include("config.php");
-		$query = "";
-		
-		// Donâ€™t be intimidated by the following lines. You can pretty much
-		// always copy and paste these because theyâ€™re sort of like
-		// functional bits that never change.
-		$result = mysql_query($query);
-		while ($row = mysql_fetch_assoc($result)) {
-			echo "<p>".$row["title"]."</p>";
->>>>>>> b3dacea09ff430bf4988b594f3098ed8216df35c
-		}
-		?>
+			include("config.php");
+			$query = "SELECT * FROM books";
+			$result = mysql_query($query);
+			while ($row = mysql_fetch_assoc($result)) {
+				echo "<tr><td><h2>".$row["title"]."</h2>";
+				echo "<p class='author'>".$row["author"]."</p>";
+				echo "<td><img width='100' class='pretty' src='".$row["image"]."' /></td></td>";
+			} 
+			?>
 		</table>
 		
 		<script type="text/javascript">
