@@ -53,12 +53,21 @@
 			padding:10px;
 		}
 		.box {
+<<<<<<< HEAD
 			width:100px;
 			float:right;
 			padding:0px;
 			color:#fff;
 			height:50px;
 			margin:20px;
+=======
+			width:50px;
+			float:left;
+			padding:15px;
+			color:#fff;
+			height:50px;
+			margin:5px;
+>>>>>>> b1412bce5fa4c36ea85ba7e719d5d82be9c09e0d
 			background:#fff;
 			border:3px solid #4889a3;
 		}

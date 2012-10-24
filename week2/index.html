@@ -25,14 +25,21 @@
 			<div id="button">Refresh GPS: <div id="timer"></div></div>
 
 			<div class="area">
+<<<<<<< HEAD
 				<div class="box box1"><div class="latitude">Blah</div></div>
+=======
+				<div class="box box1"><div class="latitude">blah</div></div>
+>>>>>>> b1412bce5fa4c36ea85ba7e719d5d82be9c09e0d
 				<div class="box box2"><div class="longitude"></div></div>
 			</div>
 
 		</div>
 
+		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
+		
 		<!-- Let's put in a timer here -->
 		<script type="text/javascript">
+<<<<<<< HEAD
 		var count = 30;
 		var counter = setInterval(timer, 1000); 
 		
@@ -47,11 +54,28 @@
 		
 		    document.getElementById("timer").innerHTML = count + " secs";
 		}
+=======
+			var count = 30;
+var counter = setInterval(timer, 1000);
+
+function timer() {
+   count = count - 1;
+   if (count <= 0) {
+       clearInterval(counter);
+       alert("Boom!");
+       document.getElementById('button').style.visibility = 'hidden';
+       return;
+   }
+
+   document.getElementById("timer").innerHTML = count + " secs";
+}
+>>>>>>> b1412bce5fa4c36ea85ba7e719d5d82be9c09e0d
 
 		</script>
 		
 		<!-- Let's put in the geolocation stuff here -->
 		<script type="text/javascript">
+<<<<<<< HEAD
 		$(function () {
     $("#button").click(function () {
         getLocation();
@@ -72,6 +96,42 @@ function showPosition(position) {
 } 
 
 getLocation();
+=======
+		
+		$(function () {
+   $("#button").click(function () {
+       getLocation();
+   });
+});
+
+function getLocation() {
+   if (navigator.geolocation) {
+      navigator.geolocation.getCurrentPosition(showPosition);
+   } else {
+       alert("Geolocation is not supported by this browser.");
+   }
+}
+
+function showPosition(position) {
+   alert(position.coords.latitude);
+   alert(position.coords.longitude);
+}
+
+getLocation();
+
+		
+//		$(function () {
+//   $("#button").click(function () {
+//       alert("hi");
+       //$(".box").hide();
+       //$(".box").faceIn();
+ //      $(".box").html("put new text here");
+      // $(".box").toggle();
+ //      $(".box1").addClass("box2");
+//   });
+//});
+
+>>>>>>> b1412bce5fa4c36ea85ba7e719d5d82be9c09e0d
 		</script>
 	</body>
 </html>
